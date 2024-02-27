@@ -14,12 +14,12 @@
         }
         static void AddUser()
         {
-            Console.WriteLine("\nAdd user:");
+            Console.WriteLine("\nAdd user and their salary:");
             string input = Console.ReadLine() ?? "";
             if (!string.IsNullOrWhiteSpace(input))
             {
                 users.Add(input);
-                Console.WriteLine($"\nUser: {input} was added\n");
+                Console.WriteLine($"\nUser & salary: {input} was added\n");
             }
             else
             {
@@ -32,7 +32,7 @@
         static void ShowUsers()
         {
             Console.WriteLine("----");
-            Console.WriteLine("Press enter to add a user, Press ctrl + c to end app.");
+            Console.WriteLine("Press enter to add a user & their salary, Press ctrl + c to end app.");
             Console.WriteLine("You can not add an empty user btw.");
             Console.WriteLine("----");
             Console.WriteLine("Userslist:");
